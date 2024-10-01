@@ -1,0 +1,6 @@
+#logo {
+    color: var(--accentColor);
+    font-weight: 600;
+    font-size: 2rem;
+    padding: 0 1rem;
+}
