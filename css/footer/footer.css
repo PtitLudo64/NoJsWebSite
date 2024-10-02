@@ -3,4 +3,13 @@ footer {
     bottom: 0;
     left: 0;
     height: var(--footerHeight);
+    padding: 1rem 0;
+    width: 100%;
+    background-color: var(--colorBackground);
+    color: var(--mainColor);
+    box-shadow: 0 0 10px var(--mainColor);
+    z-index: 10;
+    & p {
+        text-align: center;
+    }
 }
