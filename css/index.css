@@ -1,4 +1,6 @@
 @import url(./header/header.css);
+@import url(./main/main.css);
+@import url(./footer/footer.css);
 
 * {
     margin: 0;
@@ -10,6 +12,9 @@
     --colorBackground: #333;
     --mainColor: #f1f1f1;
     --accentColor: #c00;
+
+    --headerHeight: 60px;
+    --footerHeight: 60px;
 }
 
 body {

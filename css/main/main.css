@@ -1,0 +1,25 @@
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: var(--headerHeight);
+    --mainContainerHeight: calc(100vh - (var(--headerHeight) + var(--footerHeight)));
+    height: var(--mainContainerHeight);
+    padding: 20px;
+    font-size: 1.2rem;
+    color: var(--mainColor);
+    z-index: 5;
+    /* container-name: mainContainer;
+    container-type: inline-size; */
+}
+
+section {
+    height: 100%;
+    & p {
+        margin: 1rem 0;
+    }
+}
+
+
+
