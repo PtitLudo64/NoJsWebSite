@@ -2,18 +2,22 @@ section {
   display: none;
   &:target {
     display: block;
-    & * {
-        animation: fade 0.5s linear forwards;
+    & > * {
+        animation: fade var(--SectionTransitionDuration) ease forwards;
     }
   }
 }
 
 @keyframes fade {
-    from {
+    0% {
         opacity: 0;
         translate: -100% 0;
     }
-    to {
+    80% {
+        opacity: 0.3;
+        translate: 0 0;
+    }
+    100% {
         opacity: 1;
         translate: 0 0;
     }

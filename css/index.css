@@ -4,23 +4,32 @@
 @import url(./footer/footer.css);
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --colorBackground: #333;
-    --mainColor: #f1f1f1;
-    --accentColor: #c00;
+  --colorBackground: #333;
+  --mainColor: #f1f1f1;
+  --accentColor: #c00;
 
-    --headerHeight: 60px;
-    --footerHeight: 60px;
+  --headerHeight: 60px;
+  --footerHeight: 60px;
+
+  --SectionTransitionDuration: 0.5s;
 }
 
 body {
-    background-color: var(--colorBackground);
-    width: 100vw;
-    height: 100vh;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--colorBackground);
+  width: 100vw;
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  &:not(:has(section:target)) {
+    & section:first-of-type {
+      display: block;
+    }
+  }
 }
