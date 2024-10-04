@@ -3,16 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Site web full HTML/CSS. L'objectif est de créer un site sans JavaScript"
+    />
     <title>No JS Website</title>
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <header>
-      <div id="logo">No JS Site</div>
+      <div id="logo">
+        <img src="img/Javascript.svg" alt="Javascipt Logo" />
+      </div>
       <nav>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#about">A&nbsp;propos</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
@@ -38,7 +44,8 @@
           Alors, je vais construire un site web complètement statique, une
           collection de fichiers HTML et CSS, pas de traqueur, pas de script,
           pas de serveurs, pas de ressources tierces. Un site Web comme nous le
-          faisions auparavant (mais pas au marteau et burin).
+          faisions auparavant (pas au marteau et burin, et sans GIF animés qui
+          clignotent <img style="width: 1.8rem; translate: 0 .4rem" src="img/apple2.gif" /> )
         </p>
       </section>
       <section id="about">
@@ -48,10 +55,10 @@
           <label for="reason_1">Reason 1</label>
           <blockquote>
             <p>
-              C'est un challenge personnel. Je suis très amateur de sites
-              "one-page", car je leurs trouve une certaine élégange, constance
-              et que je n'aime pas les délais d'attentes entre les pages. C'est
-              donc l'occasions d'explorer CSS...
+              C'est un challenge personnel. Je suis très amateur de site
+              "one-page", car je leur trouve une certaine élégange, constance et
+              que je n'aime pas les délais d'attente entre les pages. C'est donc
+              l'occasion d'explorer CSS...
             </p>
             <cite>Moi-même</cite>
           </blockquote>
@@ -60,9 +67,9 @@
           <blockquote>
             <p>
               Tant de violations de données ont été causées par des scripts
-              JavaScript malveillant. En avoir moins serait mieux. Il y a $400
-              millions de dollars de violations de données à cause de
-              JavaScript.
+              JavaScript malveillants. Il y a 400 millions de dollars de
+              violations de données à cause de JavaScript. Avoir moins de
+              JavaScript serait mieux.
             </p>
             <cite>Scott Helme</cite>
           </blockquote>
@@ -90,12 +97,16 @@
           <label for="reason_5">Reason 5</label>
           <blockquote>
             <p>
-              JavaScript is the main cause for making websites slow. Ten years
-              ago it was network bottlenecks, but the growth of JavaScript has
-              outpaced network and CPU improvements on today's devices.
+              JavaScript est la principale cause de lenteur des sites web. Il y
+              a dix ans, c’était les goulots d’étranglement du réseau, mais la
+              croissance de JavaScript a dépassé les améliorations du réseau et
+              des processeurs sur les appareils actuels.
             </p>
             <cite>Steve Souders</cite>
           </blockquote>
+        </div>
+        <div id="logoCSS">
+          <img src="img/CSS3Mod.svg" alt="Logo CSS3" />
         </div>
       </section>
     </main>

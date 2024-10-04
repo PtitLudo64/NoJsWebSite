@@ -3,17 +3,18 @@
 	grid-template-rows: 1fr auto;
 	grid-template-columns: 1fr repeat(var(--reasonsNb), auto) 1fr;
 	justify-content: center;
+	gap: .5rem;
 
 
 	/* margin: 0 auto; */
 
 	& blockquote {
-		font-size: 1.4em;
+		font-size: 1.7rem;
 		margin-top: 4rem;
 		padding: 2.5em 1em 1em;
 		position: relative;
 
-		&::before {
+		/* &::before {
 			color: var(--accentColor);
 			content: "❝";
 			font-size: 5em;
@@ -22,10 +23,10 @@
 			top: -50px;
 			left: -20px;
 			z-index: -1;
-		}
+		} */
 
 		&::after {
-			background: #444;
+			background-color: var(--accentColor100);
 			content: "";
 			opacity: 0.1;
 			position: absolute;
@@ -33,7 +34,8 @@
 			right: 0;
 			bottom: 0;
 			left: 0;
-			z-index: -2;
+			border-radius: 1rem;
+			z-index: -1;
 		}
 	}
 
@@ -50,7 +52,7 @@
 	& cite {
 		display: block;
 		font-size: 0.9em;
-		margin-top: 5px;
+		margin-top: .5rem;
 		text-align: right;
 	}
 
@@ -123,7 +125,6 @@
 			border-radius: 50%;
 			border: 2px solid var(--accentColor);
 			display: block;
-			border-radius: 50%;
 		}
 
 		&::before {
@@ -131,8 +132,8 @@
 		}
 
 		&:after {
-			background: radial-gradient(circle,  var(--accentColor) calc(100% - 6px), 
-			transparent calc(100% - 6px));
+			background: radial-gradient(circle,  var(--yellowColor) calc(100% - 6px), 
+			var(--accentColor) calc(100% - 10px));
 			position: absolute;
 		}
 	} 
@@ -148,5 +149,13 @@
 				content: "";
 			}
 		}
+	}
+}
+
+#logoCSS {
+	margin-top: 1.5rem;
+	text-align: center;
+	& img {
+		width: 25%;
 	}
 }
